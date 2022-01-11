@@ -12,6 +12,7 @@
     <div id="app">
 
         <p>{{ message }}</p>
+        <p>your name: <input type="text"></p>
         <p v-if="count == 0">No replies</p>
         <p v-else-if="count > 5">you r popular {{count}}</p>
         <p v-else> number of replies {{ count }}</p>

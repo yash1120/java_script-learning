@@ -4,7 +4,8 @@ var app = new Vue({
     el: "#app",
     data:{
         message:"hello beta ",
-        count: 0
+        count: 0,
+        visitor_name:""
     },
     methods :{
         sayHi: function(){
