@@ -4,14 +4,20 @@ var app = new Vue({
     el: "#app",
     data:{
         message:"hello beta ",
-        count: 0,
-        visitor_name:""
+        visitor_name : "",
+        visitors : []
     },
     methods :{
         sayHi: function(){
-            this.message = "tera baap hoga beta "
-            this.count = this.count+1
+            this.message = "hello!! ";
+            this.visitors.push(this.visitor_name);
+            this.visitor_name ="";
+        },
+    computed :{
+        count : function(){
+            return this.visitors.length;
         }
+    }
     }
 }
 )
