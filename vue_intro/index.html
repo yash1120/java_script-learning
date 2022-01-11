@@ -17,6 +17,8 @@
         <p v-else-if="count > 5">you r popular {{count}}</p>
         <p v-else> number of replies {{ count }}</p>
         <button v-on:click="sayHi"> say hi !!</button>
+        <button v-on:hover="sayHi"> hover</button>
+
         <hr>
         <ul>
             <li v-for="name in visitors">{{name}}</li>
